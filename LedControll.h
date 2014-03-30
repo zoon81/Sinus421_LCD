@@ -4,7 +4,7 @@
  *  Created on: 2014.03.29.
  *      Author: zoon
  */
-
+//						This is a special file for DIY AVR Development board
 #ifndef LEDCONTROLL_H_
 #define LEDCONTROLL_H_
 

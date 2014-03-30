@@ -1,0 +1,37 @@
+i2c_start_wait(0x78); 	//turn On Display
+	i2c_write(0x00);
+	i2c_write(0x0c);
+	i2c_stop();
+	
+	
+	i2c_start_wait(0x78);  //2. oszlop
+	    i2c_write(0x80);     
+		i2c_write(0x80);
+		i2c_write(0x80);
+		i2c_write(0x41);
+		i2c_write(0x40);
+		
+		i2c_start_wait(0x78);  // 1. OSZLOP
+	    i2c_write(0x80);
+		i2c_write(0x80);
+		i2c_write(0x80);
+		i2c_write(0x40);
+		i2c_write(0x40);
+		
+		i2c_start_wait(0x78);  //????
+		i2c_write(0x00);
+		i2c_write(0x31);
+		i2c_write(0xB2);
+		i2c_write(0x30);
+		i2c_stop();
+		
+		i2c_start_wait(0x78);  //A SORBAN CSINÁL ELTOLÁST DE MENYIT??
+	    i2c_write(0xC0);
+		i2c_write(0x40);
+		i2c_write(0x40);
+		i2c_write(0x42);
+		i2c_write(0x20);
+		i2c_write(0xff);
+		i2c_write(0xff);
+		i2c_stop();
+		
